@@ -8,18 +8,23 @@
     2.1.2  Lob Scoring
       2.1.2.1  A lob that scores immediately after a 1 hit return shall be worth 2 points.
       2.1.2.2  A lob that scores after a lob from the opponents shall be worth (N+1) points,  where N is the number of consective lobs that have occurred between both teams since a 1 hit return. For example, if the serving team hits a lob at the first legal opportunity, the receiving team fields and converts their own lob, it shall be worth 3 points. 
+
+3.  The Service
+  3.1  If during an otherwise valid service, the ball strikes the edge of the table, the partner of the server is granted the ability to strike the ball.
+    3.1.1  If the partner is able to strike the ball, the ball shall be fully considered a lob.
+    3.1.2  If the partner is unable to strike the ball, the opposing team shall score a point.
       
-3  Logistics
+4.  Logistics
   3.1  Players on the team attempting to return a lob may strike the ball in any order.  If a lob is returned from the opponents with a 1 hit return,  then they must again begin alternating hits with the "setter" of the preceeding lob required to strike the ball first.
   3.2  The ball may be played legally after it strikes any surface or obstruction beyond the playing table other than the floor.  This includes but is not limited to walls, ceilings, support pillars,  or innocent bystanders.
 
-4.  Offsides
+5.  Offsides
   4.1  The offside line is the back edge of the table (parallel to to the net) extending out from the table indefinitely. 
   4.2  The spiker,  when striking the ball,  must have their entire lower body completely behind the offside line.  
     4.2.1 The lower body in this context shall be defined as the body that exists below the height of the playing table.
     4.2.2  The spiker may lean over the offside line with their upper body.
     
-5.  The Game
+6.  The Game
   5.1  Games shall be played best of 3 to 21.
     5.2  The winning team must win by 2 points.
     5.3  The winning point must be the result of a lob, except in the case of 5.4, the Three-Strike (Filippini) Rule.
