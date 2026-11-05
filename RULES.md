@@ -50,6 +50,7 @@
   - **Server 2:** The player on Team B who received Server 1's serve.
   - **Server 3:** Team A, player 2 (the partner of Server 1).
   - **Server 4:** Team B, the other player (the partner of Server 2).
+- The teams choose Server 1 for each game by any method they agree on.
 - A point that is replayed under 6.4.1 does not count.
 
 ## 4. Returns and play
