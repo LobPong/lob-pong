@@ -4,12 +4,13 @@
 
 - **Ball-strike:** Any contact between a player and the ball.
 - **Strike:** A penalty count against a team. A strike is not a ball-strike.
-- **Return:** The ball-strikes one team makes after the ball crosses the net, until the ball crosses back over the net or the point ends.
+- **Return:** The ball-strikes one team makes after the ball crosses the net, until the ball crosses back over the net or the point ends. The serve is not a return.
 - **Setter:** The first player to make a ball-strike on a return.
 - **Spiker:** The setter's partner. The spiker makes the second ball-strike on a return. A one-hit return has no spiker.
 - **Lob:** A return in which both the setter and the spiker make a ball-strike.
 - **One-hit return:** A return with one ball-strike.
 - **Game point:** A team is at game point when one more point would win the game.
+- **Player labels:** Team A's players are A1 and A2. Team B's players are B1 and B2.
 
 ## 1. Base rules
 
@@ -28,7 +29,7 @@
 - **2.4.1** A lob that scores directly after a one-hit return is worth **2 points**.
 - **2.4.2** A lob that scores after a lob by the opponents is worth **N + 1 points**. N is the number of consecutive lobs by both teams since the last one-hit return, including the scoring lob.
 
-  *Example:* The serving team lobs at the first legal chance. The receiving team lobs back and scores. There are 2 consecutive lobs, including the scoring lob, so the scoring lob is worth **3 points**.
+  *Example:* The serving team lobs at the first legal chance, after the receiver's return. The receiving team lobs back and scores. There are 2 consecutive lobs, including the scoring lob, so the scoring lob is worth **3 points**.
 
 ## 3. Service
 
@@ -46,12 +47,12 @@
   - 10 to 14: Server 3
   - 15 to 19: Server 4
 - The servers take turns between the teams in this order:
-  - **Server 1:** Team A, player 1.
-  - **Server 2:** The player on Team B who received Server 1's serve.
-  - **Server 3:** Team A, player 2 (the partner of Server 1).
-  - **Server 4:** Team B, the other player (the partner of Server 2).
+  - **Server 1:** A1.
+  - **Server 2:** The Team B player who received Server 1's serve (B1 or B2).
+  - **Server 3:** A2, the partner of Server 1.
+  - **Server 4:** The other Team B player, the partner of Server 2.
 - The teams choose Server 1 for each game by any method they agree on.
-- A point that is replayed under 6.4.1 does not count.
+- A point that does not count under 6.4.1 is not added to the total. The score does not change, and the rally is replayed.
 
 ## 4. Returns and play
 
@@ -67,9 +68,9 @@
 
 **5.1** The offside line is the back edge of the table on the spiker's own end. It is parallel to the net and extends out from the table indefinitely.
 
-**5.2** When the spiker makes a ball-strike, the spiker's entire lower body must be behind the offside line. If it is not, the opposing team scores a point.
+**5.2** When the spiker makes a ball-strike, the spiker's entire lower body must be behind the offside line. "Behind" means on the side of the line away from the table. If the spiker's lower body is not behind the line, the opposing team scores a point.
 
-- **5.2.1** The lower body is the part of the body below the height of the playing table.
+- **5.2.1** The lower body is the part of the body below the height of the tabletop surface.
 - **5.2.2** The spiker may lean over the offside line with the upper body.
 
 ## 6. Scoring the game
@@ -86,7 +87,7 @@
 
   *Example:* Team A leads 20-15. Team A scores a point that is not a lob. The score stays 20-15, the rally is replayed with the same server, and Team B receives 1 strike.
 
-- **6.4.2** A team that scores a counting point has its strikes reset to zero.
+- **6.4.2** When a team scores a counting point, the strikes of both teams are reset to zero.
 - **6.4.3** A team with 3 strikes loses the game.
 - **6.4.4** When any team reaches game point, all four players must say aloud, before the next serve: "The Three-Strike (Filippini) rule is in effect."
 
