@@ -4,17 +4,17 @@
   var END = START + 20 * STEP; // total reaches 20 here
 
   var PLAYERS = [
-    { label: 'A1', x: 380, y: 235 },  // Server 1
-    { label: 'B1', x: 380, y: 385 },  // Server 2 (example: B1 received)
-    { label: 'A2', x: 820, y: 235 },  // Server 3
-    { label: 'B2', x: 820, y: 385 }   // Server 4
+    { label: 'A1', x: 330, y: 432 },  // Server 1: A's lower half (server's right half)
+    { label: 'B1', x: 870, y: 267 },  // Server 2 (example: B1 received): B's upper half (receiver's right half)
+    { label: 'A2', x: 330, y: 267 },  // Server 3: A's upper half
+    { label: 'B2', x: 870, y: 432 }   // Server 4: B's lower half
   ];
   var ORDER_X = [330, 510, 690, 870];
 
   LobPong.register('service', {
     duration: 24,
     captions: [
-      { t0: 0, t1: 2, text: 'The teams choose Server 1 by any method they agree on. Here, A1 serves first. Example: B1 received Server 1\'s serve.' },
+      { t0: 0, t1: 2, text: 'The teams choose Server 1 by any method they agree on. Here, A1 serves first. The serve goes diagonally: the ball bounces on A1\'s right half, then on B1\'s right half. Example: B1 received Server 1\'s serve.' },
       { t0: 2, t1: 7, text: 'Count every point in the game. Lobs count in full. At totals 0 to 4, Server 1 (A1) serves.' },
       { t0: 7, t1: 12, text: 'Service changes every 5 points. At totals 5 to 9, Server 2 serves. This is the Team B player who received Server 1\'s serve (B1 or B2). In this example, B1 received it.' },
       { t0: 12, t1: 17, text: 'At totals 10 to 14, Server 3 serves. This is A2, the partner of Server 1.' },
@@ -24,13 +24,20 @@
     mount: function (svg) {
       var S = LobPong.svg, seg = LobPong.seg, lerp = LobPong.lerp;
 
-      // Table
-      S('rect', { x: 150, y: 140, width: 900, height: 340, rx: 16, style: 'fill:var(--court);stroke:var(--line);stroke-width:4' }, svg);
-      S('line', { x1: 150, y1: 310, x2: 1050, y2: 310, style: 'stroke:var(--line);stroke-width:4' }, svg);
-      var tA = S('text', { x: 600, y: 190, 'text-anchor': 'middle', 'font-size': 34, style: 'fill:var(--muted);font-family:var(--font)' }, svg);
+      // Table, seen from above: long side across the stage, net in the middle.
+      S('rect', { x: 150, y: 185, width: 900, height: 330, rx: 4, style: 'fill:var(--court);stroke:var(--line);stroke-width:5' }, svg);
+      S('line', { x1: 150, y1: 350, x2: 1050, y2: 350, style: 'stroke:var(--line);stroke-width:3' }, svg);
+      S('line', { x1: 600, y1: 160, x2: 600, y2: 540, style: 'stroke:var(--ink);stroke-width:8' }, svg);
+      var tA = S('text', { x: 130, y: 275, 'text-anchor': 'end', 'font-size': 34, style: 'fill:var(--muted);font-family:var(--font)' }, svg);
       tA.textContent = 'Team A';
-      var tB = S('text', { x: 600, y: 462, 'text-anchor': 'middle', 'font-size': 34, style: 'fill:var(--muted);font-family:var(--font)' }, svg);
+      var tB = S('text', { x: 1070, y: 275, 'text-anchor': 'start', 'font-size': 34, style: 'fill:var(--muted);font-family:var(--font)' }, svg);
       tB.textContent = 'Team B';
+
+      // Serve path for Server 1: bounces on A's right half, then on B's right half.
+      var servePath = S('g', {}, svg);
+      S('path', { d: 'M 420 410 Q 600 120 780 300', style: 'fill:none;stroke:var(--accent);stroke-width:6;stroke-dasharray:14 12' }, servePath);
+      S('circle', { cx: 420, cy: 410, r: 12, style: 'fill:var(--accent)' }, servePath);
+      S('circle', { cx: 780, cy: 300, r: 12, style: 'fill:var(--accent)' }, servePath);
 
       // Counter and formula
       var counter = S('text', { x: 600, y: 82, 'text-anchor': 'middle', 'font-size': 56, 'font-weight': 700, style: 'fill:var(--ink);font-family:var(--font)' }, svg);
@@ -93,6 +100,7 @@
             if (k > 0) arrows[k - 1].setAttribute('opacity', lerp(0.25, 1, shown).toFixed(3));
           }
           arrows[0].setAttribute('opacity', lerp(0.25, 1, seg(t, START + 5 * STEP, START + 5 * STEP + 1)).toFixed(3));
+          servePath.setAttribute('opacity', (1 - seg(t, 3, 4)).toFixed(3));
         }
       };
     }
