@@ -65,7 +65,9 @@
 
 **6.4** Three-Strike (Filippini) rule
 
-- **6.4.1** If a team is within one point of a winning score and scores a point that is not a lob, the opponents receive a strike.
+- **6.4.1** A team is within one point of winning when one more point would win the game. If that team scores a point that is not a lob, the point does not count. The opposing team receives a strike instead.
+
+  *Example:* Team A leads 20-15. Team A scores a non-lob point. The score stays 20-15, and Team B receives 1 strike.
 - **6.4.2** A team that wins at least one point has its strikes reset to zero.
 - **6.4.3** A team with 3 strikes loses the game.
 - **6.4.4** When any team reaches game point, all team members must say aloud: "The Three-Strike (Filippini) rule is in effect."
@@ -76,8 +78,6 @@
 
 - **4.2:** "They" is read as the team that hit the lob. Confirm.
 - **6.1:** "Best of 3 to 21" is read as best of 3 games, each to 21. Confirm.
-- **6.4.1:** Which team receives the strike, and what counts as "a winning score" (21, or the win-by-2 threshold at 20 or above). Confirm.
-
 ## References
 
 [1] ITTF Handbook, section 2: http://www.ittf.com/ittf_handbook/hb.asp?s_number=2
