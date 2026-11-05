@@ -12,7 +12,8 @@ Lob Pong is a doubles variant of table tennis. It uses the ITTF doubles rules, w
 
 ## Scoring at a glance
 
-- A game is played to 21 points. A match is best of 3 games.
+- A match is best of 3 games. Each game is played to 21 points.
+- Players may agree on different scores before a match if they prefer.
 - The winning team must lead by at least 2 points.
 - The winning point must be a lob, except under the Three-Strike rule.
 - A lob after a one-hit return scores 2 points. A lob after consecutive lobs scores more. See section 2.4.

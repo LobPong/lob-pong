@@ -57,7 +57,7 @@
 
 ## 6. Scoring the game
 
-**6.1** A game is played to 21 points. A match is best of 3 games.
+**6.1** A match is best of 3 games. Each game is played to 21 points. Players may agree on different scores before a match if they prefer.
 
 **6.2** The winning team must lead by at least 2 points.
 
@@ -72,12 +72,6 @@
 - **6.4.3** A team with 3 strikes loses the game.
 - **6.4.4** When any team reaches game point, all team members must say aloud: "The Three-Strike (Filippini) rule is in effect."
 
-## Open questions
-
-*Remove this section before merging.*
-
-- **4.2:** "They" is read as the team that hit the lob. Confirm.
-- **6.1:** "Best of 3 to 21" is read as best of 3 games, each to 21. Confirm.
 ## References
 
 [1] ITTF Handbook, section 2: http://www.ittf.com/ittf_handbook/hb.asp?s_number=2
