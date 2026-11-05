@@ -45,9 +45,12 @@
   - 5 to 9: Server 2
   - 10 to 14: Server 3
   - 15 to 19: Server 4
+- The servers take turns between the teams in this order:
+  - **Server 1:** Team A, player 1.
+  - **Server 2:** The player on Team B who received Server 1's serve.
+  - **Server 3:** Team A, player 2 (the partner of Server 1).
+  - **Server 4:** Team B, the other player (the partner of Server 2).
 - A point that is replayed under 6.4.1 does not count.
-
-  *To confirm:* Which player is Server 1, 2, 3, and 4.
 
 ## 4. Returns and play
 
