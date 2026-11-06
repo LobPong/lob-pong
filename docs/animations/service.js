@@ -27,7 +27,7 @@
       // Table, seen from above: long side across the stage, net in the middle.
       S('rect', { x: 150, y: 185, width: 900, height: 330, rx: 4, style: 'fill:var(--court);stroke:var(--line);stroke-width:5' }, svg);
       S('line', { x1: 150, y1: 350, x2: 1050, y2: 350, style: 'stroke:var(--line);stroke-width:3' }, svg);
-      S('line', { x1: 600, y1: 160, x2: 600, y2: 540, style: 'stroke:var(--ink);stroke-width:8' }, svg);
+      S('line', { x1: 600, y1: 168, x2: 600, y2: 524, style: 'stroke:var(--ink);stroke-width:8' }, svg);
       var tA = S('text', { x: 130, y: 275, 'text-anchor': 'end', 'font-size': 34, style: 'fill:var(--muted);font-family:var(--font)' }, svg);
       tA.textContent = 'Team A';
       var tB = S('text', { x: 1070, y: 275, 'text-anchor': 'start', 'font-size': 34, style: 'fill:var(--muted);font-family:var(--font)' }, svg);
