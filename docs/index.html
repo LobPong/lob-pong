@@ -10,9 +10,20 @@
   <header class="page-header">
     <h1>Lob Pong Rules</h1>
     <p>Lob Pong is a doubles table tennis game. Partners can set up each other and play a lob for extra points.</p>
-    <p>The ITTF rules for doubles table tennis apply. Lob Pong adds four changes: lobs (section 2), the serve-edge rule (3.1), service rotation every 5 points (3.2), and the Three-Strike rule at game point (6.4).</p>
+    <p>The ITTF rules for doubles table tennis apply. Lob Pong changes them in these places: lobs (section 2), the serve-edge rule (3.1), service rotation every 5 points (3.2), offside (5), the Three-Strike rule at game point (6.4), and games to 21 points (6.1).</p>
     <p>Each animation below shows one rule. You can pause it, replay it, or drag the timeline.</p>
-    <h2 id="terms-title">Terms</h2>
+    <aside class="start-box" aria-labelledby="start-title">
+      <h2 id="start-title">Before you start</h2>
+      <ol>
+        <li><strong>Serve diagonally.</strong> The ball must touch your right half, then the receiver's right half. "Right" means your right as you face the net. (ITTF Handbook 2022, 2.6.3)</li>
+        <li><strong>Hit in turn.</strong> The order is server, receiver, server's partner, receiver's partner, then repeat (ITTF Handbook 2022, 2.8.2). When your team returns the opponents' lob, you may hit in any order (RULES.md 4.1).</li>
+        <li><strong>Games go to 21</strong>, unless you agree otherwise before the match (ITTF uses 11). You must win by 2. At game point, a point that is not a lob does not count (RULES.md 6.1, 6.2, 6.3, 6.4.1).</li>
+        <li><strong>A lob</strong> is one return where the setter and then the spiker both hit the ball (see Terms). A lob that scores directly after a one-hit return is worth 2 points (RULES.md 2.4.1).</li>
+      </ol>
+    </aside>
+    <p class="skip"><a href="#service">I know doubles. Skip to Service order.</a></p>
+    <details class="terms-details" open>
+    <summary id="terms-title">Terms</summary>
     <ul class="terms" aria-labelledby="terms-title">
       <li><strong>Ball-strike:</strong> Any contact between a player and the ball.</li>
       <li><strong>Strike:</strong> A penalty count against a team. A strike is not a ball-strike.</li>
@@ -24,10 +35,11 @@
       <li><strong>Game point:</strong> A team is at game point when one more point would win the game.</li>
       <li><strong>Player labels:</strong> Team A's players are A1 and A2. Team B's players are B1 and B2.</li>
     </ul>
+    </details>
   </header>
 
   <main>
-    <section class="demo" data-animation="service" aria-labelledby="service-title">
+    <section class="demo" id="service" data-animation="service" aria-labelledby="service-title">
       <h2 id="service-title">Service order</h2>
       <figure class="demo-stage">
         <svg class="stage" viewBox="0 0 1200 700" role="img" aria-label="Diagram of the four servers and the order in which they serve as the game score rises."></svg>
